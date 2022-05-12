@@ -1,12 +1,14 @@
 <?php
 include '../../includes/db.php';
-$idcategoria=$_GET['idcategoria'];
 
-$sql="DELETE FROM categoria WHERE idcategoria='$idcategoria'";
- 
-
-$query=mysqli_query($conn,$sql);
-if($query){
-Header("Location:Index.php");
+if ($_REQUEST['empid']) {
+    $identificacion = $_REQUEST['empid'];
+    $sql  ="DELETE FROM usuarios WHERE identificacion=$identificacion";
+    $query = mysqli_query($conn, $sql);
+    if ($query) {
+        echo "Registro Borrado";
+        // Header("Location:Index.php");
+    }
 }
+
 ?>
