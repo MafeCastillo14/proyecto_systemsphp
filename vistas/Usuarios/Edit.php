@@ -1,7 +1,7 @@
 <?php
 include '../../includes/db.php';
 
-$idcategoria = $_GET['identificacion'];
+$identificacion = $_GET['identificacion'];
 $sql = "SELECT * from usuarios where identificacion=" . $_GET['identificacion'] . ";";
 
 $query = mysqli_query($conn, $sql);
@@ -25,7 +25,7 @@ $mostrar = mysqli_fetch_array($query);
 <body>
 
   <body style="background-color:beige">
-    <h2 style=" display: flex; align-content: center; margin-left: 38%; margin-top: 10%;"> Editar Categoria </h2>
+    <h2 style=" display: flex; align-content: center; margin-left: 38%; margin-top: 10%;"> Editar Usuario </h2>
     <br>
     <form action="metodoUpdate.php" method="POST" style="width: 50%; margin-left: 25%;">
       <div class="row">

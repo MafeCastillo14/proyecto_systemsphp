@@ -18,8 +18,8 @@
 <a href="Add.php" class="btn btn-success"> Registrar </a>
 
 <br></br>
-
-<table class="table table-striped" style="width 80%">
+  
+<table class="table table-striped" style="width: 80%">
     <tr class="table-secondary">
         <td> Id </td>
         <td>Categoria</td>   
@@ -42,5 +42,6 @@
      }      
     ?>
 </table>
+                       
 </body>
 </html>

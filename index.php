@@ -1,92 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-	<title>Módulos</title>
-    <link rel="shortcut icon" href="img/logorojo.png">
-	<link rel="stylesheet" type="text/css" href="EstiloInicio.css">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-	
-    <script  src = " https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script >
-    
-    <link  rel = " stylesheet " href = " https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css " >
-    <script  src = " https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " > </script >
-    
-    <link  rel = " stylesheet " href = " https://use.fontawesome.com/releases/v5.0.8/css/solid.css " >
-    <script  src = " https://use.fontawesome.com/releases/v5.0.7/js/all.js " > </script >
-    <link rel="stylesheet" type="text/css" href="Modulos.css">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Systems TaT</title>
+        <link rel="shortcut icon" href="assets/img/logorojo.png">
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
     </head>
-<body>
-<header>
-         <nav style="background-color: #F75554; height: 90px;  font-family: popins, sans-serif; text-transform:capitalize;" class="navbar custom-navbar navbar-expand-lg py-2">
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-danger">
+            <!-- Navbar Brand-->
           
-         <a href="Modulos.html"><img src="./loggo1.jpg" style="width: 55px; height: 60px; margin-left: 50px;" ></a>
-          <img style=" margin-left: 75%;" src="https://img.icons8.com/office/65/000000/user.png"/>
-        <div style="width: 20%;" > 
-            Johny Sierra <br>
-           <a href=""style="color: black; text-decoration:none"> Admón </a>  <br>
-           <a href="PagInicio.html" style="color: black; text-decoration:none "  > Cerrar Sesión  </a>            
-        </div>
-    </nav>
-
-</header>
- <section class="page-section portfolio" id="portfolio">
-
-            <div class="container">
-                <h1 class="page-section-heading text-center text-uppercase text-white mb-0"></h1>
-                <div class="row justify-content-center">
-                    <div class="col-md-3 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"> </div>
-                            </div>
-                           <a href="RegistrarUsu.html" class="btn btn-Usuarios"><span>USUARIOS</span></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"></i></div>
-                            </div>
-                            <a href="modulo_Ventas.html" class="btn btn-Compras"><span>COMPRAS</span></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"></i></div>
-                            </div>
-                            <a href="consultarproducto.html" class="btn btn-Inventario"><span>INVENTARIO</span></a>
-                        </div>
-                    </div>
-                                    <div class="col-md-3 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"> </div>
-                            </div>
-                            <a href="" class="btn btn-Ventas"><span>VENTAS</span></a>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-lg-2 mb-5">
-                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                <div class="portfolio-item-caption-content text-center text-white"> </div>
-                    </div>
-                        
-             
-                    </div>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+            <!-- Navbar Search-->
+            <form class="d-none d-md-inline-block form-inline ms-auto me-0 me-md-3 my-2 my-md-0">
+                <div class="input-group">
+                    <input class="form-control" type="text" placeholder="Buscar..." aria-label="Buscar..." aria-describedby="btnNavbarSearch" />
+                    <button class="btn btn-danger" id="btnNavbarSearch" type="button"><i class="fas fa-search"></i></button>
                 </div>
-
+            </form>
+            <!-- Navbar-->
+            <ul class="navbar-nav ms-auto ms-md-0 me-3 me-lg-4">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fas fa-user fa-fw"></i></a>
+                    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="PagInicio.html">Pagina Inicio</a></li>
+                        <li><a class="dropdown-item" href="Login.html">Cerrar Sesión</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-light" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Variedades Bethesda</div>
+                           
+                            <br>                           
+             
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fas fa-book-open"></i></div>
+                                MODULOS
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        VENTAS
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="vistas/EstadoCliente/index.php">Estado Cliente</a>
+                                            <a class="nav-link" href="vistas/EstadoTicket/index.php">Estado Ticket</a>
+                                            </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        INVENTARIO
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="vistas/Categoria/index.php">Categoria</a>
+                                            <a class="nav-link" href="vistas/UnidadMedida/index.php">Unidad de Medida</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseCompras" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        USUARIOS
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseCompras" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                        <a class="nav-link" href="vistas/Usuarios/index.php">Usuario</a>
+                                             <a class="nav-link" href="vistas/TipoUsuario/index.php">Tipo Usuario</a>
+                                            
+                                        
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+                       </div>
+             
+                </nav>
             </div>
-        </section>
-  <footer class="w-100  d-flex  align-items-center justify-content-center flex-wrap" id="forter">
-  <i>Creado por: Maria Fernada Castillo, Daniela Padilla Blanco y Johny Sierra Martinez</i>
-</footer>
-</body>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <img  src="assets/img/logorojo.png" width="10%" alt=""> 
+                        <h1 class="mt-4">Bienvenidos</h1>
+                        <ol class="breadcrumb mb-4">
+                            <li class="breadcrumb-item active">Systems TAT</li>
+                     
+                      </ol>
+  
+              </main>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@latest" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
 </html>
-<script>
-    alert('')
-</script>
+
 
 
 <?php

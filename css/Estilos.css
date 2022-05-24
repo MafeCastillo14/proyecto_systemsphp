@@ -1,0 +1,256 @@
+header{
+    background-color: #ef3a4c;
+	width: 100%;
+	min-height: 8vh;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.header{
+	max-height:20rem !important;
+}
+
+
+
+.navg a{
+	 color: black !important;
+	 font-family: sans-serif;
+     font-size: 100%;
+     font-style: oblique;
+     padding: 10px 15px;
+	text-align:center;
+	text-transform: uppercase;
+	}
+
+.navg a:hover{
+	background-color: white;
+	border-radius: 8px 0px 39px 22px;
+}
+
+
+.Principal{
+    margin: 0 auto;
+    margin-top: 10%;
+    padding: 0;
+}
+
+.Iusuario{
+    margin-top: 30px;
+    margin-bottom:  35px;
+    
+    
+}
+
+.modal-content{
+    background-color: white;
+    margin-left: 250px;
+    opacity: .90;
+    padding: 0 20px;
+    box-shadow: 0px 0px 3px #CFCFCF;
+    
+
+}
+
+.form-group input {
+ background-color: #C3F2FC;
+ height: 42px;
+ font-size: 18px;
+ border:1cm;
+ padding-left:  42px;
+ border-radius: 7px;
+    
+}
+
+.form-group::before{
+font-family:"Font Awesome\ 5 Free";
+position: absolute;
+left: 23px;
+font-size: 22px;
+padding-top: 4px;
+}
+
+.form-group#Gusuario::before{
+content: "\f007";
+}
+
+.form-group#Gcontrasena::before{
+content: "\f023";
+}
+
+button{
+    width: 70%;
+    margin-top:  5px 0 25px;
+}
+
+.Olvidoc{
+    padding: 5px;
+}
+
+.Olvidoc a{
+color: black;
+}
+
+.Recordarc{
+    padding: 5px;
+}
+
+.Rocordarc a{
+color: black;
+}
+
+#navbarNavAltMarkup{
+ text-decoration-color: black;
+}
+.btn-Iniciar{
+  padding: 2px 1px;
+  color: black;
+  background-color: #EE3636;
+}
+
+
+.btn{
+   	
+  padding: 1px 2px;
+  color: black;
+  background-color: #EE3636;
+}
+
+
+
+#intro2 {
+	padding-left: 25%;
+	background-color: #F3F3F3;
+	text-align: black;
+	
+	
+}
+
+#intro2 p{
+	 color: black !important;
+	 font-family: sans-serif;
+     font-size: 80%;
+     font-style: oblique;
+     padding: 10px 20px;
+	text-align:left;
+	text-transform: uppercase;
+	}	
+
+
+
+.carousel-item h5,p{
+	 color: black !important;
+	 font-family: sans-serif;
+     font-size: 120%;
+     font-style: oblique;
+     padding: 10px 20px;
+	text-align:left;
+	text-transform: uppercase;
+}
+
+#intro1{
+	padding-left: 25%;
+	background-color: #F3F3F3;
+	text-align: right;
+	padding-left: 20px;
+}
+
+#intro1 p{
+	 color: black !important;
+	 font-family: sans-serif;
+     font-size: 80%;
+     font-style: oblique;
+     padding: 10px 20px;
+	text-align:center;
+	text-transform: uppercase;
+	}	
+
+
+
+.carousel-item h5,p{
+	 color: black !important;
+	 font-family: sans-serif;
+     font-size: 120%;
+     font-style: oblique;
+     padding: 10px 20px;
+	text-align:right;
+	text-transform: uppercase;
+}
+
+
+#forter {
+    background: #ef3a4c;
+    min-height: 2px;
+    
+}
+#forter p{
+    color:#f3f3f3;
+    text-align:center;
+}
+
+
+#contactenos{
+    padding: 1cm;
+    text-align: center;
+    font-family: popins, sans-serif;
+}
+
+#Ubicación{
+    background-color: #F9F9F9;
+    font-family: popins, sans-serif;
+}
+
+#Equipodetrabajo{
+    margin-right: 2cm;
+    margin-top: 1cm;
+    margin-left: 2cm; 
+}
+
+
+
+#contactenos{
+    background-color: #E2E2E2;
+}
+
+
+#proveedores h4{
+     
+     font-family: popins, sans-serif;
+     padding: 1cm;
+     text-align: center;
+
+}
+
+#proveedores{
+    margin-bottom: 1cm;
+}
+
+#Equipodetrabajo{
+     background-color: #F9F9F9;
+     font-family: popins, sans-serif;
+     text-align: center;
+
+}
+
+#Equipodetrabajo h3{
+    padding-top: 1cm;
+    font-size: 35px;
+
+}
+
+#Equipodetrabajo h4{
+    padding-top: 1cm;
+    font-size: 35px;
+
+}
+#quienessomos{
+   
+    text-align: center;
+    padding-top: 1cm;
+    opacity: .72;
+}
+
+
+#ainiciar{
+    background-color: #EAEAEA;
+}
