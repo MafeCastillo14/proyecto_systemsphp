@@ -82,7 +82,7 @@
       </div>
       <div class="col">
         Fecha Caducidad:
-        <input type="text" class="form-control" placeholder="" name="fecha_caducidad">
+        <input type="date" class="form-control" placeholder="" name="fecha_caducidad">
       </div>
     </div>
     <br>
