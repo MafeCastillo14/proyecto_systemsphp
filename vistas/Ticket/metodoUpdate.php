@@ -1,27 +1,30 @@
 <?php
 include '../../includes/db.php';
 
+$nro_ticket = $_POST["nro_ticket"];
 $codigo_producto = $_POST["codigo_producto"];
-$descripcion = $_POST["descripcion"];
-$precio = $_POST["precio"];
 $cantidad = $_POST["cantidad"];
-$categoria = $_POST["categoria"];
-$marca = $_POST["marca"];
-$unidad_medida = $_POST["unidad_medida"];
-$fecha_caducidad = $_POST["fecha_caducidad"];
+$valor_unitario = $_POST["valor_unitario"];
+$valor_total = $_POST["valor_total"];
+$fecha = $_POST["fecha"];
+$estado_venta = $_POST["estado_venta"];
+$usuario = $_POST['usuario'];
+$numero_cuenta_cobro = $_POST['numero_cuenta_cobro'];
 
-$sql = "UPDATE producto
+$sql = "UPDATE ticket
 SET
+`nro_ticket` = $nro_ticket,
 `codigo_producto` = $codigo_producto,
-`descripcion` = '$descripcion',
-`precio` = $precio,
 `cantidad` = $cantidad,
-`categoria` = $categoria,
-`marca` = $marca,
-`unidad_medida` = $unidad_medida,
-`fecha_caducidad` ='$fecha_caducidad'
-WHERE `codigo_producto`=$codigo_producto;
+`valor_unitario` = $valor_unitario,
+`valor_total` = $valor_total,
+`fecha` = '$fecha',
+`estado_venta` = $estado_venta,
+`usuario` = $usuario,
+`numero_cuenta_cobro` = $numero_cuenta_cobro
+WHERE `nro_ticket` = $nro_ticket;
 ";
+
 
 $query=mysqli_query($conn,$sql);
 echo $sql;

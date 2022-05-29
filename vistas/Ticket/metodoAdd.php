@@ -14,6 +14,14 @@ $numero_cuenta_cobro = $_POST["numero_cuenta_cobro"];
 
 $sql = "INSERT INTO ticket(
         nro_ticket,
+        codigo_producto,
+        cantidad,
+        valor_unitario,
+        valor_total,
+        fecha,
+        estado_venta,
+        usuario,
+        numero_cuenta_cobro
       )
       VALUES ( 
         $nro_ticket,

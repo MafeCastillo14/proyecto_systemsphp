@@ -1,8 +1,8 @@
 <?php
 include '../../includes/db.php';
 
-$codigo_producto = $_GET['codigo_producto'];
-$sql = "SELECT * from producto where codigo_producto=" . $_GET['codigo_producto'] . ";";
+$nro_ticket = $_GET['nro_ticket'];
+$sql = "SELECT * from ticket where nro_ticket=" . $_GET['nro_ticket'] . ";";
 
 $query = mysqli_query($conn, $sql);
 
@@ -25,81 +25,64 @@ $mostrar = mysqli_fetch_array($query);
 <body>
 
   <body style="background-color:beige">
-    <h2 style=" display: flex; align-content: center; margin-left: 38%; margin-top: 10%;"> Editar Producto </h2>
+    <h2 style=" display: flex; align-content: center; margin-left: 38%; margin-top: 10%;"> Editar Ticket </h2>
     <br>
     <form action="metodoUpdate.php" method="POST" style="width: 50%; margin-left: 25%;">
       <div class="row">
 
         <div class="col">
-          Codigo Producto:
-          <input type="text" class="form-control" placeholder="" value="<?php echo $mostrar['codigo_producto'] ?>" name="codigo_producto">
+          Nro Ticket:
+          <input type="text" class="form-control" placeholder="" value="<?php echo $mostrar['nro_ticket'] ?>" name="nro_ticket">
         </div>
         <div class="col">
-          Descripcion:
-          <input type="text" class="form-control" placeholder="" value="<?php echo $mostrar['descripcion'] ?>" name="descripcion">
+          Producto:
+          <input type="text" class="form-control" placeholder="" value="<?php echo $mostrar['codigo_producto'] ?>" name="codigo_producto">
         </div>
       </div>
       <br>
       <div class="row">
-        <div class="col">
-          Precio:
-          <input type="text" class="form-control" placeholder="" value="<?php echo $mostrar['precio'] ?>" name="precio">
-        </div>
         <div class="col">
           Cantidad:
           <input type="text" class="form-control" placeholder="" value="<?php echo $mostrar['cantidad'] ?>" name="cantidad">
         </div>
-      </div>
-      <br>
-      <div class="row">
         <div class="col">
-          Categoria:
-          <select class="form-control" value="" name="categoria" name="select" id="categoria">
-          <option value="47">C-Tecnologia</option>
-          <option value="53">A-Comestibles</option>
-          <option value="57">B-Aseo</option>
-          </select>
-        </div>
-        <div class="col">
-          Marca:
-          <select class="form-control" value="" name="marca" name="select" id="marca">
-          <option value="1">colombina</option>
-          <option value="2">super ricas</option>
-          <option value="3">coca cola</option>
-          <option value="4"> alpina</option>
-          <option value="5">california</option>
-          <option value="6">ramo</option>
-          <option value="7">familia</option>
-          <option value="8">atogrande</option>
-          <option value="9">pepsico</option>
-          <option value="10">san jorge</option>
-          <option value="11">unilever</option>
-          <option value="13">bavaria</option>
-          <option value="14">jhonson & jhonson</option>
-          <option value="15">big cola</option>
-         </select>
+          Valor Unitario:
+          <input type="text" class="form-control" placeholder="" value="<?php echo $mostrar['valor_unitario'] ?>" name="valor_unitario">
         </div>
       </div>
       <br>
       <div class="row">
         <div class="col">
-          Unidad Medida:
-          <select class="form-control" value="" name="unidad_medida" name="select" id="unidad_medida">
-          <option value="1"> Gramos</option>
-          <option value="2"> Libra</option>
-          <option value="3"> Kilo</option>
-          <option value="4"> Botella 3 litros</option>
-          <option value="11"> Paca x 18 unidades</option>
-          <option value="13"> Caja x 24 unidades</option>
-         </select>
+        Valor Total:
+          <input type="text" class="form-control" placeholder="" value="<?php echo $mostrar['valor_total'] ?>" name="valor_total">
         </div>
         <div class="col">
-          Fecha Caducidad:
-          <input type="text" class="form-control" placeholder="" value="<?php echo $mostrar['fecha_caducidad'] ?>" name="fecha_caducidad">
+          Fecha:
+          <input type="date" class="form-control" placeholder="" value="<?php echo $mostrar['fecha'] ?>" name="fecha">
         </div>
       </div>
       <br>
       <div class="row">
+        <div class="col">
+         Estado Venta:
+          <select class="form-control" value="<?php echo $mostrar['estado_venta'] ?>" name="estado_venta" id="estado_venta">
+            <option value="1">Paga</option>
+            <option value="2">Fiada</option>
+             </select>
+        </div>
+        <div class="col">
+          Usuario:
+          <select class="form-control" value="<?php echo $mostrar['usuario'] ?>" name="usuario" id="usuario">
+            <option value="0">jkj</option>
+                       </select>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col">
+          Cuenta Cobro:
+          <input type="text" class="form-control" placeholder="" value="<?php echo $mostrar['numero_cuenta_cobro'] ?>" name="numero_cuenta_cobro">
+        </div>
         <div class="col">
           <button type="submit" class="btn btn-danger" style="margin-top: 25px; width: 30%;">Actualizar</button>
         </div>

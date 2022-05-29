@@ -10,6 +10,10 @@
   <link rel="stylesheet" src="style.css">
 
 </head>
+<?php
+include '../../includes/db.php';
+include '../../layaut.php';
+?>
 
 <body style="background-color:beige">
   <h2 style=" display: flex; align-content: center; margin-left: 38%; margin-top: 5%;"> Registro Ticket </h2>
@@ -22,11 +26,20 @@
         <input type="text" class="form-control" placeholder="" name="nro_ticket">
       </div>
       <div class="col">
-      Codigo Producto:
-      <select class="form-control" value="" name="codigo_producto" name="select" id="codigo_producto">
-          <option value="1">Papel Aluminio</option>
-          <option value="2">Pony Malta</option>
-          </select>
+        Codigo Producto:
+        <select class="form-control" value="" name="codigo_producto" name="select" id="codigo_producto">
+          <?php
+          $sql = "SELECT * FROM producto";
+          $result = mysqli_query($conn, $sql);
+          while ($mostrar = mysqli_fetch_array($result)) {
+          ?>
+            <option value="<?php echo $mostrar['codigo_producto'] ?>"><?php echo $mostrar['descripcion'] ?></option>
+          <?php
+          }
+
+          ?>
+
+        </select>
       </div>
     </div>
     <br>
@@ -47,29 +60,29 @@
         <input type="text" class="form-control" placeholder="" name="valor_total">
       </div>
       <div class="col">
-      Fecha:
-      <input type="date" class="form-control" placeholder="" name="fecha">
+        Fecha:
+        <input type="date" class="form-control" placeholder="" name="fecha">
       </div>
     </div>
     <br>
     <div class="row">
       <div class="col">
-         Estado Venta:
+        Estado Venta:
         <select class="form-control" value="" name="estado_venta" name="select" id="estado_venta">
           <option value="1"> Paga</option>
           <option value="2"> Fiada</option>
         </select>
       </div>
       <div class="col">
-         Usuario:
-         <select class="form-control" value="" name="usuario" name="select" id="usuario">
+        Usuario:
+        <select class="form-control" value="" name="usuario" name="select" id="usuario">
           <option value="0"> jkj </option>
         </select>
       </div>
     </div>
-      <br>
-      <br>
-      <div class="row">
+    <br>
+    <br>
+    <div class="row">
       <div class="col">
         Nro Cuenta Cobro:
         <input type="text" class="form-control" placeholder="" name="numero_cuenta_cobro">
