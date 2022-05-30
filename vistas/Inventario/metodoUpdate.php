@@ -28,3 +28,5 @@ echo $sql;
 if($query){
 Header("Location:Index.php");
 }
+git config --global user.email "fernanda.castillo.garzon@gmail.com"
+git config --global user.name "MafeCastillo14"

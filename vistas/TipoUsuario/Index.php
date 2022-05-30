@@ -9,9 +9,11 @@
     <link rel="stylesheet" src="style.css">
 </head>
 <body>
+    	
+
 <?php
  include '../../includes/db.php';  
-
+ 
 ?>
 <h2> <p class="text-secondary">Tipo Usuario</p> </h2>
 <br></br>
